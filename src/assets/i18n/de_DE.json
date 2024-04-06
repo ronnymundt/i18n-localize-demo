@@ -1,4 +1,6 @@
 {
   "btn_translate": "Übersetzen",
+  "claim_text": "Beispiel i18n Lokalisation",
+  "demo_text": "Dieser Demo-Text wird mithilfe des ngx-Translation-Pakets und der Lokalisations-JSON-Datei aus dem assets/i18n-Verzeichnis angezeigt und übersetzt. Er demonstriert die Funktionalität der Lokalisierung in einer Anwendung. Bitte beachten Sie, dass dieser Text nicht statisch im Quellcode vorhanden ist.",
   "hello_wold": "Hallo Welt!"
 }

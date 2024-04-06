@@ -1,4 +1,6 @@
 {
   "btn_translate": "Translate",
+  "claim_text": "Example i18n localization",
+  "demo_text": "This demo text is displayed and translated using the ngx-translation package and the localization JSON file from the assets/i18n directory. It showcases the functionality of localization within an application. Please note that this text is not statically present in the source code.",
   "hello_wold": "Hello World!"
 }
