@@ -25,6 +25,6 @@ export class AppComponent implements OnInit{
   }
 
   onTranslationButtonClick() {
-    this.translate.use(this.translate.currentLang === 'de_DE' ? 'en_EN' : 'de_DE');
+    this.translate.use(this.translate.currentLang === this.translate.defaultLang ? 'en_EN' : 'de_DE');
   }
 }
