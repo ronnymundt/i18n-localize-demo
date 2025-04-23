@@ -1,17 +1,18 @@
 <div class="d-flex justify-content-center p-3">
   <div class="card w-50">
     <div class="card-header">
-      {{'claim_text' | translate}}
+      {{ "claim_text" | translate }}
     </div>
     <div class="card-body">
       <p class="card-text">
-        {{'demo_text' | translate}}
+        {{ "demo_text" | translate }}
       </p>
       <button
         type="button"
         class="btn btn-primary"
-        (click)="onTranslationButtonClick()">
-          {{ 'btn_translate' | translate }}
+        (click)="onTranslationButtonClick()"
+      >
+        {{ "btn_translate" | translate }}
       </button>
     </div>
   </div>

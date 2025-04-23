@@ -1,18 +1,14 @@
-import {Component, OnInit} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {TranslateModule, TranslateService} from "@ngx-translate/core";
+import { Component, inject, OnInit } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, TranslateModule],
+  imports: [TranslateModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit{
-  constructor(
-    private translate: TranslateService
-  ) { }
+export class AppComponent implements OnInit {
+  readonly translate = inject(TranslateService);
 
   ngOnInit() {
     this.initI18n();
@@ -21,10 +17,13 @@ export class AppComponent implements OnInit{
   private initI18n() {
     this.translate.setDefaultLang('de_DE'); // default fallback language
     this.translate.use('de_DE'); // use german language
-
   }
 
   onTranslationButtonClick() {
-    this.translate.use(this.translate.currentLang === this.translate.defaultLang ? 'en_EN' : 'de_DE');
+    this.translate.use(
+      this.translate.currentLang === this.translate.defaultLang
+        ? 'en_EN'
+        : 'de_DE',
+    );
   }
 }
