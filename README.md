@@ -1,9 +1,34 @@
-# I18nLocalizeDemo
+# I18n Localize Demo 🌐
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.
+Ein kleines Angular 19 Demonstration der **Internationalisierung (i18n)** mit **`ngx-translate`**.
+Die Texte werden aus **JSON-Dateien** geladen und dynamisch im Template übersetzt.
 
-## Screenshot
+## 🛠️ Technologien
 
-![Screenshot](/src/assets/screenshot_de.png)
+- Angular 19
+- TypeScript
+- [`@ngx-translate/core`](https://github.com/ngx-translate/core)
+- `HttpClientModule` für das Laden von Übersetzungen
+- JSON-basierte Sprachdateien
 
-![Screenshot](/src/assets/screenshot_en.png)
+## 🎯 Ziel der Demo
+
+Dieses Projekt zeigt, wie man:
+
+- `ngx-translate` in einem Angular-Projekt integriert
+- Übersetzungen dynamisch aus JSON-Dateien lädt
+- die Sprache zur Laufzeit ändern kann
+- Platzhalter (`{{variable}}`) in Übersetzungen verwendet
+
+## 🚀 Lokales Setup
+
+```
+git clone https://github.com/ronnymundt/i18n-localize-demo.git
+cd i18n-localize-demo
+npm install
+ng serve
+```
+
+## 🎥 Screencast
+
+![Screencast](/src/assets/screencast.gif)
